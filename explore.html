@@ -1,51 +1,34 @@
 <html>
 	<head>
-		
 		<meta charset="utf-8">
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-	    <title>Welcome to Sci-Tings!</title>
+	    <title>Explore Data!</title>
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</head>
-
-	<style type="text/css">
-		html, body {
-		  height: 100%;
-		  margin: 0;
-		  padding: 0;
-		}
-		#container { /* div you want to stretch */
-		  background-color: #e9ecef;
-		  height: 100%; /** IE 6 */
-		  min-height: 100%;
-		}
-	</style>	
-
-	<body>
+	<body style="background-color:#e9ecef;">
 		<div id="container">
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
 				
 				<div class="container-fluid">
-					<a class="navbar-brand" href="#" style="color:#28a745">Sci-Tings!!</a>
+					<a class="navbar-brand" href="#">Sci-Tings!!</a>
 	          		<div class="navbar-header">
 	            		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 	              			<span class="navbar-toggler-icon"></span>
-
-				        </button>
-	            		
+				        </button>	            		
 	          		</div>
 
 					<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 						<ul class="navbar-nav mr-auto">
-					    	<li class="nav-item active">
-					        	<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					    	<li class="nav-item">
+					        	<a class="nav-link" href="index.html">Home</a>
 					      	</li>
-					      	<li class="nav-item">
-					        	<a class="nav-link" href="explore.html">Explore Data!</a>
+					      	<li class="nav-item active">
+					        	<a class="nav-link" href="#">Explore Data <span class="sr-only">(current)</span></a>
 					      	</li>
 					      	<li class="nav-item dropdown">
 					        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -72,33 +55,39 @@
 					 </div>	
 				</div>
 			</nav>
-			<div class="jumbotron">
-				<h1 class="display-4" align="center">Hello World! </h1>
-			  	<p class="lead" align="center">Welcome to Sci-Tings, home to the world's largest open-source data analysis portal!</p>
-			  	<hr class="my-4">
-			  	<div class="container">
-				 	<div class="row justify-content-center">
-				 		<div class="card">
-			  				<div class="card-header">Welcome to Sci-Tings</div>
-							<div class="card-body">
-								<h5 class="card-title">Start exploring all the Data</h5>
-					    		<p class="card-text">All of this data is yours and everyones.</p>
-					    		<a href="#!" class="btn btn-primary">Go somewhere</a>
-							</div>
-						</div>
-					</div>
-					<br>
-					<div class="row justify-content-center">
-						<div class="card text-white bg-dark" style="max-width: 20rem;">
-			  				<div class="card-header">Have FUN!</div>
-				  			<div class="card-body">
-				    			<h5 class="card-title">Lots and lots of FUN!</h5>
-				    			<p class="card-text text-white">......but not too much fun.</p>
-			  				</div>
-						</div>
-					</div>
-				</div>		
-			</div>
+			
 		</div>	
+		<h1 align="center">Explore Data!</h1>
+
+		<table class="table">
+		  <thead class="black white-text">
+		    <tr>
+		      <th scope="col">#</th>
+		      <th scope="col">First</th>
+		      <th scope="col">Last</th>
+		      <th scope="col">Handle</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <th scope="row">1</th>
+		      <td>Mark</td>
+		      <td>Otto</td>
+		      <td>@mdo</td>
+		    </tr>
+		    <tr>
+		      <th scope="row">2</th>
+		      <td>Jacob</td>
+		      <td>Thornton</td>
+		      <td>@fat</td>
+		    </tr>
+		    <tr>
+		      <th scope="row">3</th>
+		      <td>Larry</td>
+		      <td>the Bird</td>
+		      <td>@twitter</td>
+		    </tr>
+		  </tbody>
+		</table>
 	</body>
 </html>
