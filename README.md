@@ -1,2 +1,2 @@
 # Sci-Tings
-Database warehouse
+An open-source, collaborative data science laboratory for anyone and everyone!
