@@ -3,6 +3,7 @@ import boto3
 from botocore.client import Config
 import io
 import zipfile
+import mimetypes
 
 def lambda_handler(event, context):
 
@@ -35,7 +36,8 @@ def lambda_handler(event, context):
 		with zipfile.ZipFile(st_zip) as myzip: # Provide alias name to build artifact zip file
 			for nm in myzip.namelist(): # Iterate through files in ZIP
 				obj = myzip.open(nm) # Store individual file
-				st_bucket.upload_fileobj(obj,nm) # Upload file to source bucket
+				st_bucket.upload_fileobj(obj,nm,
+					ExtraArgs={'ContentType': mimetypes.guess_type(nm)[0]}) # Upload file to source bucket
 				st_bucket.Object(nm).Acl().put(ACL="public-read") # Give file object public-read permissions
 				print("uploaded....",nm)
 
