@@ -1,0 +1,16 @@
+version: 0.1
+
+phases:
+  build:
+    commands:
+      -echo Nothing to do yet
+artifacts:
+  files:
+    - index.html    
+    - assets/*
+    - css/*
+    - explore.html
+    - sara.html
+    - signin.html
+    - signup.html
+    - sunset.jpg
