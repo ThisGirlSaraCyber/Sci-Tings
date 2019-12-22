@@ -6,11 +6,8 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	    <title>Welcome to Sci-Tings!</title>
-	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	</head>
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
 	<style type="text/css">
 		html, body {
@@ -24,19 +21,24 @@
 		  min-height: 100%;
 		}
 	</style>
-
+</head>
 	<body>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 		<div id="container">
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
 
 				<div class="container-fluid">
-					<a class="navbar-brand" href="#" style="color:#28a745">Sci-Tings!!</a>
+					<a class="navbar-brand" href="#">
+            <img src="img/flower.png" alt="flower-icon" height="42" width="35">
+          </a>
+          <a class="navbar-brand" href="#" style="color:#28a745">Sci-Tings</a>
 	          		<div class="navbar-header">
 	            		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 	              			<span class="navbar-toggler-icon"></span>
-
-				        </button>
-
+				        	</button>
 	          		</div>
 
 					<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -58,56 +60,68 @@
 					          		<a class="dropdown-item" href="#">Data Repository</a>
 					        	</div>
 					      	</li>
-					      	<li class="nav-item">
-						        <a class="nav-link" href="signup.html">Sign Up!</a>
-					    	</li>
+
 					    	<li class="nav-item">
-						        <a class="nav-link" href="signin.html">Login</a>
-					    	</li>
-					    	<li class="nav-item">
-					    		<a class="nav-link" href="sara.html">Sara</a>
+					    		<a class="nav-link" href="https://sara.sci-tings.org" style="color:#fdfd96;">Sara</a>
 					    	</li>
 					    </ul>
+							<ul class="navbar-nav my-2 my-lg-0">
+								<li class="nav-item">
+									<a class="nav-link" href="signup.html">Sign Up!</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="signin.html">Login</a>
+								</li>
+							</ul>
 					    <form class="form-inline my-2 my-lg-0">
-					    	<input class="form-control mr-sm-2" type="search" placeholder="Search Data!" aria-label="Search">
+					    	<input class="form-control mr-lg-2" type="search" placeholder="Search Data!" aria-label="Search">
 					    	<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 					    </form>
+
+
 					 </div>
 				</div>
 			</nav>
 			<div class="jumbotron">
-				<h1 class="display-4" align="center">Hello World! </h1>
-			  	<p class="lead" align="center">Welcome to Sci-Tings, home to the world's largest open-source data analysis portal!</p>
+				<h1 class="display-4" align="center">Sci - Tings</h1>
+			  	<p class="lead" align="center">An open-source, collaborative data science laboratory aimed at expanding <em>access</em> to data and information.</p>
 			  	<hr class="my-4">
 			  	<div class="container">
-				 	<div class="row justify-content-center">
-				 		<div class="card">
-			  				<div class="card-header">Welcome to Sci-Tings</div>
-							<div class="card-body">
-								<h5 class="card-title">Start exploring all the Data</h5>
-					    		<p class="card-text">All of this data is yours and everyones.</p>
-					    		<a href="#!" class="btn btn-primary">Go somewhere</a>
-							</div>
+					<br>
+					<div class="row justify-content-center">
+						<div class="card" style="max-width: 20rem;">
+			  				<div class="card-header"  style="color:#28a745;" align="center"><b>Open Source</b></div>
+				  			<div class="card-body">
+				    			<!-- <h6 class="card-title">Lots and lots of FUN!</h6> -->
+				    			<p class="card-text">At Sci-Tings we aim to make data accessible and transparent. This includes auditing the veracity of data sets. The end goal is for users to justify their data workflows and conclusions.</p>
+			  				</div>
+						</div>
+						&nbsp;
+						<div class="card" style="max-width: 20rem;">
+			  				<div class="card-header" style="color:#28a745" align="center"><b>Collaborative Data Workflows</b></div>
+				  			<div class="card-body">
+				    			<!-- <h6 class="card-title">All data analyses are free to use and modify.</h6> -->
+				    			<p class="card-text">All data analyses are free to use and shareable with the public. Additionally, users can seek help when trying to analyze data and creating data visualizations in order to foster an open discussion.</p>
+			  				</div>
+						</div>
+						&nbsp;
+						<div class="card" style="max-width: 20rem;">
+			  				<div class="card-header" style="color:#28a745" align="center"><b>Guided Data Science Pipeline</b></div>
+				  			<div class="card-body">
+				    			<!-- <h6 class="card-title">All data analyses are free to use and modify.</h6> -->
+				    			<p class="card-text">Get started by uploading a data set and we'll help you get started with your data analyses. Learn to analyze data from start to finish.</p>
+			  				</div>
 						</div>
 					</div>
 					<br>
 					<div class="row justify-content-center">
-						<div class="card text-white bg-dark" style="max-width: 20rem;">
-			  				<div class="card-header">Have FUN!</div>
-				  			<div class="card-body">
-				    			<h5 class="card-title">Lots and lots of FUN!</h5>
-				    			<p class="card-text text-white">......but not too much fun.</p>
-			  				</div>
-						</div>
-					</div>
-
-					<div class="row justify-content-center">
-						<div class="card text-white bg-dark" style="max-width: 20rem;">
-			  				<div class="card-header">Collaborative data workflows </div>
-				  			<div class="card-body">
-				    			<h5 class="card-title">Using open source data</h5>
-				    			<p class="card-text text-white">and open source tools.</p>
-			  				</div>
+				 		<div class="card">
+			  				<div class="card-header" align="center">Welcome to Sci-Tings</div>
+							<div class="card-body">
+								<h5 class="card-title">Start exploring data sets today....</h5>
+					    		<!-- <p class="card-text">All of this data is yours and everyones.</p> -->
+					    		<center><a href="explore.html" class="btn btn-primary">Get Started</a></center>
+							</div>
 						</div>
 					</div>
 				</div>

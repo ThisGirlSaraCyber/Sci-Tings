@@ -3,8 +3,8 @@
 		<meta charset="utf-8">
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-	    <title>Explore Data!</title>
+
+	    <title>Explore Data Projects</title>
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -13,13 +13,16 @@
 	<body style="background-color:#e9ecef;">
 		<div id="container">
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
-				
+
 				<div class="container-fluid">
-					<a class="navbar-brand" href="#">Sci-Tings!!</a>
+					<a class="navbar-brand" href="#">
+            <img src="img/flower.png" alt="flower-icon" height="42" width="35">
+          </a>
+          <a class="navbar-brand" href="#" style="color:#28a745">Sci-Tings</a>
 	          		<div class="navbar-header">
 	            		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 	              			<span class="navbar-toggler-icon"></span>
-				        </button>	            		
+				        </button>
 	          		</div>
 
 					<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -41,52 +44,54 @@
 					          		<a class="dropdown-item" href="#">Data Repository</a>
 					        	</div>
 					      	</li>
-					      	<li class="nav-item">
-						        <a class="nav-link" href="signup.html">Sign Up!</a>
-					    	</li>
-					    	<li class="nav-item">
-						        <a class="nav-link" href="signin.html">Login</a>
-					    	</li>
-					    </ul>
-					    <form class="form-inline my-2 my-lg-0">
-					    	<input class="form-control mr-sm-2" type="search" placeholder="Search Data!" aria-label="Search">
-					    	<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-					    </form>
-					 </div>	
+								</ul>
+								<ul class="navbar-nav my-2 my-lg-0">
+									<li class="nav-item">
+										<a class="nav-link" href="signup.html">Sign Up!</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="signin.html">Login</a>
+									</li>
+								</ul>
+						    <form class="form-inline my-2 my-lg-0">
+						    	<input class="form-control mr-lg-2" type="search" placeholder="Search Data!" aria-label="Search">
+						    	<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+						    </form>
+					 </div>
 				</div>
 			</nav>
-			
-		</div>	
-		<h1 align="center">Explore Data!</h1>
 
+		</div>
+		<h1 align="center">Explore Data Projects</h1>
+		<hr>
 		<table class="table">
 		  <thead class="black white-text">
 		    <tr>
-		      <th scope="col">#</th>
-		      <th scope="col">First</th>
-		      <th scope="col">Last</th>
-		      <th scope="col">Handle</th>
+		      <th scope="col">Topic</th>
+		      <th scope="col">Data Set</th>
+		      <th scope="col">Data Analysis</th>
+		      <th scope="col">Data Visualization</th>
 		    </tr>
 		  </thead>
 		  <tbody>
 		    <tr>
-		      <th scope="row">1</th>
-		      <td>Mark</td>
-		      <td>Otto</td>
-		      <td>@mdo</td>
+		      <td>City of Shreveport Budget - 2018</td>
+		      <td><a href="analyses/data/01_Expenses By FundRevenues By Fund.csv">Data</a></td>
+		      <td><a href="analyses/expenses.R">R Script</a></td>
+		      <td><a href="analyses/img/expense.png">Bar Chart</a></td>
 		    </tr>
-		    <tr>
-		      <th scope="row">2</th>
-		      <td>Jacob</td>
-		      <td>Thornton</td>
-		      <td>@fat</td>
-		    </tr>
-		    <tr>
-		      <th scope="row">3</th>
-		      <td>Larry</td>
-		      <td>the Bird</td>
-		      <td>@twitter</td>
-		    </tr>
+				<tr>
+ 				 <td>Medicare Psychoses Diagnoses Locations</td>
+ 				 <td><a href="analyses/data/Inpatient_Prospective_Payment_System__IPPS__Provider_Summary_for_the_Top_100_Diagnosis-Related_Groups__DRG__-_FY2011.csv">Data</a></td>
+ 				 <td><a href="analyses/ipps.R">R Script</a></td>
+ 				 <td><a href="analyses/img/ipps.png">Bar Chart</a></td>
+ 			 </tr>
+			 <tr>
+				<td> NASA Facilities for Entrepreneurs and Innovators Locations</td>
+				<td><a href="analyses/data/NASA_Labs_Facilities.xlsx">Data</a></td>
+				<td><a href="analyses/nasa_locations.R">R Script</a></td>
+				<td><a href="analyses/img/nasaLocations.png">Bar Chart</a></td>
+			</tr>
 		  </tbody>
 		</table>
 	</body>
