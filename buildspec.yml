@@ -6,11 +6,4 @@ phases:
       - echo Nothing to do yet
 artifacts:
   files:
-    - index.html    
-    - assets/*
-    - css/*
-    - explore.html
-    - sara.html
-    - signin.html
-    - signup.html
-    - sunset.jpg
+    - */*
